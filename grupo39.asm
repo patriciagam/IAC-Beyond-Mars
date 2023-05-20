@@ -53,3 +53,4 @@ ha_tecla:              ; neste ciclo espera-se até NENHUMA tecla estar premida
 
 fim:                  ; fim do programa
 
+; Continua apenas a funcionar para uma linha (facated)
