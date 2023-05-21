@@ -28,7 +28,7 @@ inicio:
 
 ciclo:         
     MOV  R6, LINHA     ;                                                    adicionado do pedaço da aula
-    MOVB [R4], R6      ; escreve linha e coluna a zero nos displays
+    MOVB [R4], R6      ; escreve o valor 1 nos displays
 
 espera_tecla:          ; neste ciclo espera-se até uma tecla ser premida
     SHR R6, 1          ; roda o valor de R6 para a direita                     adicionado do pedaço da aula
