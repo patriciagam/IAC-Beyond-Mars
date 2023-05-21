@@ -12,7 +12,7 @@
 DISPLAYS   EQU 0A000H  ; endereço dos displays de 7 segmentos (periférico POUT-1)
 TEC_LIN    EQU 0C000H  ; endereço das linhas do teclado (periférico POUT-2)
 TEC_COL    EQU 0E000H  ; endereço das colunas do teclado (periférico PIN)
-LINHA      EQU 1       ; linha a testar (4ª linha, 1000b)
+LINHA      EQU 1       ; linha a testar 
 MASCARA    EQU 0FH     ; para isolar os 4 bits de menor peso, ao ler as colunas do teclado
 
 ; **********************************************************************
@@ -26,8 +26,8 @@ inicio:
     MOV  R4, DISPLAYS  ; endereço do periférico dos displays
     MOV  R5, MASCARA   ; para isolar os 4 bits de menor peso, ao ler as colunas do teclado
 
-ciclo externo:         
-    MOV  R6, LINHA      ;                                                    adicionado do pedaço da aula
+ciclo:         
+    MOV  R6, LINHA     ;                                                    adicionado do pedaço da aula
     MOVB [R4], R6      ; escreve linha e coluna a zero nos displays
 
 espera_tecla:          ; neste ciclo espera-se até uma tecla ser premida
