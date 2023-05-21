@@ -69,5 +69,4 @@ converte_tecla:
     SHL  R7, 2
     ADD  R7, R8
     MOVB [R4], R7      ; escreve hexadecimal nos displays
-    JMP  ciclo
-    JMP espera_tecla          
+    JMP  ciclo          
