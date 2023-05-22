@@ -11,8 +11,8 @@
 DISPLAYS   EQU 0A000H  ; endereço dos displays de 7 segmentos (periférico POUT-1)
 TEC_LIN    EQU 0C000H  ; endereço das linhas do teclado (periférico POUT-2)
 TEC_COL    EQU 0E000H  ; endereço das colunas do teclado (periférico PIN)
-LINHA      EQU 1       ; linha a testar (1ª linha, 0001b)
-TESTE      EQU 8
+LINHA1     EQU 1       ; linha 1
+LINHA4     EQU 8       ; linha 4 
 MASCARA    EQU 0FH     ; para isolar os 4 bits de menor peso, ao ler as colunas do teclado
 
 ;==============================================================================
