@@ -3,7 +3,7 @@
 ;------------------------------------------------------------------------------
 ; Inês Paredes (ist1107028)
 ; Margarida Lourenço (ist1107137)
-; Patrícia Gameiro (ist1107245)
+; Patrí­cia Gameiro (ist1107245)
 ;
 ;==============================================================================
 ; CONSTANTES
@@ -90,6 +90,7 @@ incrementa:
     MOV  R1, [ENERGIA]
     ADD  R1, R0
     MOVB [R4], R1
+    MOV  [ENERGIA], R1
     POP  R1
     POP  R0
     JMP  espera_tecla
@@ -99,6 +100,7 @@ decrementa:
     MOV  R1, [ENERGIA]
     ADD  R1, R0
     MOVB [R4], R1
+    MOV  [ENERGIA], R1
     POP  R1
     POP  R0
     JMP  espera_tecla
