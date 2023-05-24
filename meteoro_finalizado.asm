@@ -14,8 +14,8 @@ APAGA_AVISO     		EQU COMANDOS + 40H		; endereço do comando para apagar o aviso
 APAGA_ECRÃ	 		EQU COMANDOS + 02H		; endereço do comando para apagar todos os pixels já desenhados
 SELECIONA_CENARIO_FUNDO  	EQU COMANDOS + 42H		; endereço do comando para selecionar uma imagem de fundo
 
-LINHA   EQU  1        ; linha do boneco (primeira linha do ecrã)
-COLUNA	EQU  1        ; coluna do boneco (primeira coluna do ecrã)
+LINHA   EQU  0        ; linha do boneco (primeira linha do ecrã)
+COLUNA	EQU  0        ; coluna do boneco (primeira coluna do ecrã)
 
 LARGURA		EQU	5		; largura do boneco
 COR_PIXEL	EQU	0FF00H		; cor do pixel: vermelho em ARGB 
